@@ -15,8 +15,8 @@
 
     var activities= {
         init: function () {
-            var $activitiesStep2 = $activitiesStep2,
-                $activities = $activities,
+            var $activitiesStep2 = $('activitiesStep2'),
+                $activities = $('activities'),
                 activityTop,
                 activityHeight,
                 maxHeight = 0;
@@ -52,7 +52,7 @@
             $activityItems = $('.activity_item');
             $activityGridLinks.on('click', function(e) {
                 e.preventDefault();
-                var $this=($this),
+                var $this=$($this),
                     id=$this[0].href.split('#')[1],
                     $target=$activityItems.filter('[id="' + id + '"]');
 
