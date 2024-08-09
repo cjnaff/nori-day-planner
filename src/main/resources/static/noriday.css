@@ -1,3 +1,50 @@
+/*
 #activities_grid a:hover img, #activities_grid a:not(.selected):focus img {
     outline: 3px solid #e4008b;
+}*/
+
+
+#activities_grid li:nth-child(3n+1) {
+    clear: both;
+    margin-left: 0;
+}
+#activities_grid li:first-child, #activities_grid li:nth-child(2), #activities_grid li:nth-child(3) {
+    margin-top: 0;
+}
+
+#activities_grid .img {
+    display: block;
+    margin-bottom: 9px;
+    margin-bottom: .5625rem;
+    text-align: left;
+}
+
+
+#activities_grid a:hover img, #activities_grid a:focus img {
+    outline: 3px solid #e4008b;
+}
+
+#activities_grid a:after {
+    background: url(images/sprite2.jpeg) no-repeat 0 -442px;
+    content: '';
+    display: none;
+    height: 46px;
+    position: absolute;
+    right: 4px;
+    top: 13px;
+    width: 59px;
+}
+
+#activities_grid a.selected {
+    position: relative;
+}
+
+#activities_grid a.selected:after {
+    display: block;
+}
+
+#activities_grid a.selected img {
+    margin: 30px auto;
+    height: 80px;
+    width: 80px;
 }
