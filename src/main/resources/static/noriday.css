@@ -1,0 +1,3 @@
+#activities_grid a:hover img, #activities_grid a:not(.selected):focus img {
+    outline: 3px solid #e4008b;
+}
